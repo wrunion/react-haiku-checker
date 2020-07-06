@@ -1,13 +1,22 @@
 import React from 'react';
 import Header from './Header';
-import LineChecker from './LineChecker';
+import LineCheckerHooks from './LineCheckerHooks';
 import './../App.css';
 
 const App = () => {
+  const handleSubmitCallback = (props) => {
+    console.log(props)
+  }
+
   return (
     <>
-      <Header />      
-      <LineChecker />
+      <Header />
+      <LineCheckerHooks 
+        handleSubmitCallback={handleSubmitCallback} />
+      <LineCheckerHooks 
+        handleSubmitCallback={handleSubmitCallback} />
+      <LineCheckerHooks 
+        handleSubmitCallback={handleSubmitCallback} />
     </>
   )
 }
