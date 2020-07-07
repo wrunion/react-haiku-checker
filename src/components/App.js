@@ -12,11 +12,17 @@ const App = () => {
     <>
       <Header />
       <LineCheckerHooks 
-        handleSubmitCallback={handleSubmitCallback} />
+        lineId={1}
+        handleSubmitCallback={handleSubmitCallback}
+        placeholderText="Enter a line with 5 syllables" />
       <LineCheckerHooks 
-        handleSubmitCallback={handleSubmitCallback} />
+      lineId={2}
+        handleSubmitCallback={handleSubmitCallback} 
+        placeholderText="Enter a line with 7 syllables" />
       <LineCheckerHooks 
-        handleSubmitCallback={handleSubmitCallback} />
+      lineId={3}
+        handleSubmitCallback={handleSubmitCallback} 
+        placeholderText="Enter a line with 5 syllables"/>
     </>
   )
 }

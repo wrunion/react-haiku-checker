@@ -14,9 +14,11 @@ const LineCheckerHooks = (props) => {
           <input 
             type="text" 
             value={value}
+            placeholder={props.placeholderText}
             onChange={(e) => setValue(e.target.value)} />
           <button 
             onClick={handleSubmit}
+            id="CheckLineButton"
             className="ui button basic violet">Check Line</button>
         </div>
         {/* <h2>The value is: {value}</h2> */}
