@@ -6,21 +6,22 @@ import './../App.css';
 const App = () => {
   const handleSubmitCallback = (props) => {
     console.log(props)
+    // Currently this sends back the lineId and the inputted string.
   }
 
   return (
     <>
       <Header />
       <LineCheckerHooks 
-        lineId={1}
+        id={1}
         handleSubmitCallback={handleSubmitCallback}
         placeholderText="Enter a line with 5 syllables" />
       <LineCheckerHooks 
-      lineId={2}
+        id={2}
         handleSubmitCallback={handleSubmitCallback} 
         placeholderText="Enter a line with 7 syllables" />
       <LineCheckerHooks 
-      lineId={3}
+        id={3}
         handleSubmitCallback={handleSubmitCallback} 
         placeholderText="Enter a line with 5 syllables"/>
     </>

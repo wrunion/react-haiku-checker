@@ -4,9 +4,10 @@ import '../App.css';
 const LineCheckerHooks = (props) => {
   const [value, setValue] = useState('');
 
+  /* Pass input string to parent component (App) */
   const handleSubmit = (e) => {
     e.preventDefault();
-    props.handleSubmitCallback(value);
+    props.handleSubmitCallback({value: value, id: props.id});
   }
     return (
       <>
@@ -21,7 +22,6 @@ const LineCheckerHooks = (props) => {
             id="CheckLineButton"
             className="ui button basic violet">Check Line</button>
         </div>
-        {/* <h2>The value is: {value}</h2> */}
       </>
     )
   }
